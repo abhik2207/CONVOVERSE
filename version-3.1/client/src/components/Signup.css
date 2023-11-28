@@ -1,0 +1,138 @@
+.signupPage {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.signupTop {
+    background-color: #00977e;
+    height: 40%;
+    width: 100%;
+    padding: 5vmax;
+}
+
+.signupTop > h1 {
+    color: #fff;
+    font-size: 1.6vmax;
+}
+
+.signupTop > h3 {
+    color: #fff;
+    font-size: 0.8vmax;
+}
+
+.signupBottom {
+    background-color: #141414;
+    height: 60%;
+    width: 100%;
+}
+
+.signupCard {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 58%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px #0000006b;
+    display: flex;
+    overflow: hidden;
+}
+
+.cardLeft {
+    width: 50%;
+    height: 100%;
+    padding: 2vmax;
+}
+
+.cardLeft > h1 {
+    font-size: 2vmax;
+    font-weight: 700;
+}
+
+.line {
+    height: 1%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #00000094;
+    margin-bottom: 1vmax;
+}
+
+.cardLeft > form > label {
+    font-size: 1.2vmax;
+}
+
+.cardLeft > form > input {
+    font-size: 0.8vmax;
+    background-color: rgba(231, 231, 231, 0.678);
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0.5vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.submitButtom {
+    height: 11%;
+    width: 50%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vmax;
+    box-shadow: 0px 0px 10px #0000004d;
+    margin-top: 0.8vmax;
+    margin-bottom: 1vmax;
+    font-size: 0.9vmax;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.submitButtom:hover {
+    cursor: grab;
+    box-shadow: 0px 0px 10px #000000c5;
+}
+
+.submitButtom:active {
+    cursor: grabbing;
+}
+
+.submitButtom > img {
+    height: 50%;
+    width: 20%;
+    object-fit: contain;
+}
+
+.loginText {
+    color: #00977e;
+    font-size: 1vmax;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.loginText:hover {
+    color: #006b59;
+    cursor: pointer;
+}
+
+.cardRight {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.cardRight > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

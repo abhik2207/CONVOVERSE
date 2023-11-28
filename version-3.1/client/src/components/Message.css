@@ -1,0 +1,26 @@
+.sentMessageDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.receivedMessageDiv {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.msg {
+    color: #000;
+    max-width: 50%;
+    padding: 0.5vmax;
+    font-size: 0.9vmax;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.sentMessage {
+    background-color: #00d8b4;
+}
+
+.receivedMessage {
+    background-color: #FFFFFF;
+}
