@@ -77,7 +77,7 @@ const Login = () => {
                         <input type="text" name="phoneNumber" id="phoneNumber" value={credentials.phoneNumber} onChange={onChange} placeholder='Ex: 989162XXXX' required /><br />
                         <label htmlFor="password">Password</label> <br />
                         <input type="password" name="password" id="password" value={credentials.password} onChange={onChange} placeholder='Enter your password' required />
-                        <button type='submit' className='submitButtom'><img src={loginLogo} alt="Google logo" />Log in</button>
+                        <button type='submit' className='loginButton'><img src={loginLogo} alt="Google logo" />Log in</button>
                         <Link to='/signup' className='signupText'>Not a user? Sign up</Link>
                     </form>
                 </div>

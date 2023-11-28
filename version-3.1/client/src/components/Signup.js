@@ -76,7 +76,7 @@ const Signup = () => {
                         <input type="password" name="password" id="password" value={credentials.password} onChange={onChange} placeholder='Must be 8 characters' required /><br />
                         <label htmlFor="profilePic">Profile Pic</label> <br />
                         <input type="text" name="profilePic" id="profilePic" value={credentials.profilePic} onChange={onChange} placeholder='URL to Profile Pic' required />
-                        <button type='submit' className='submitButtom'><img src={signupLogo} alt="Google logo" />Sign up</button>
+                        <button type='submit' className='signupButton'><img src={signupLogo} alt="Google logo" />Sign up</button>
                         <Link to='/' className='loginText'>Already a user? Log in</Link>
                     </form>
 

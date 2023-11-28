@@ -77,8 +77,8 @@
     margin-bottom: 0.5vmax;
 }
 
-.submitButtom {
-    height: 11%;
+.cardLeft > form > .signupButton {
+    height: 14%;
     width: 50%;
     border-radius: 50px;
     border: none;
@@ -92,21 +92,21 @@
     box-shadow: 0px 0px 10px #0000004d;
     margin-top: 0.8vmax;
     margin-bottom: 1vmax;
-    font-size: 0.9vmax;
+    font-size: 1vmax;
     font-weight: 700;
     transition: 0.3s;
 }
 
-.submitButtom:hover {
+.cardLeft > form > .signupButton:hover {
     cursor: grab;
     box-shadow: 0px 0px 10px #000000c5;
 }
 
-.submitButtom:active {
+.cardLeft > form > .signupButton:active {
     cursor: grabbing;
 }
 
-.submitButtom > img {
+.cardLeft > form > .signupButton > img {
     height: 50%;
     width: 20%;
     object-fit: contain;
