@@ -9,9 +9,9 @@ import ConversationWallpaper from './ConversationWallpaper.jpg';
 
 const Conversation = (props) => {
     const { selectedChat } = props;
-    const [messageText, setMessageText] = useState('');
-    const [pickerVisible, setPickerVisible] = useState(false);
-    const [messageList, setMessageList] = useState(allMessages);
+    const [ messageText, setMessageText ] = useState('');
+    const [ pickerVisible, setPickerVisible ] = useState(false);
+    const [ messageList, setMessageList ] = useState(allMessages);
 
     function handleChange(e) {
         setMessageText(e.target.value);
@@ -63,10 +63,10 @@ const Conversation = (props) => {
             <div className="conversationHeader">
                 <div className="chatPerson">
                     <div className="personDP">
-                        <img src={selectedChat.displayImageURL} alt="PERSON DP" />
+                        <img src={localStorage.getItem('convoverseUserLoginProfilePic')} alt="PERSON DP" />
                     </div>
                     <div className="personName">
-                        <p>{selectedChat.contactName}</p>
+                        <p>{localStorage.getItem('convoverseUserLoginName')}</p>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const ContactList = (props) => {
     const { setChatPlaceHolder, setSelectedChat } = props;
-    const [ allContacts, setAllContacts ] = useState([]);
+    const [ userInfo, setUserInfo ] = useState([]);
     const navigate = useNavigate();
 
     function logoutUser() {
@@ -26,20 +26,31 @@ const ContactList = (props) => {
             }
         });
         const jsonResponse = await response.json();
-        // console.log('-- JSON RESPONSE --');
-        // console.log(jsonResponse);
+        console.log(jsonResponse.responseData);
+        setUserInfo(jsonResponse.responseData);
 
-        const contacts = jsonResponse.responseData.map(channel => {
-            if(loggedInUserId === channel.channelUsers[0]._id){
-                return channel.channelUsers[1];
-            }
-            else{
-                return channel.channelUsers[0];
-            }
-        });
+        // const contacts = jsonResponse.responseData.map(channel => {
+        //     if(loggedInUserId === channel.channelUsers[0]._id){
+        //         return channel.channelUsers[1];
+        //     }
+        //     else{
+        //         return channel.channelUsers[0];
+        //     }
+        // });
         // console.log('-- ALL CONTACTS --');
         // console.log(contacts);
-        setAllContacts(contacts);
+
+        // const messages = jsonResponse.responseData.map(channel => {
+        //     const length = channel.messages.length;
+        //     return channel.messages[length-1];
+        // });
+        // console.log('-- ALL MESSAGES --')
+        // console.log(messages);
+
+        // const everything = [contacts, messages];
+        // console.log('-- EVERYTHING --');
+        // console.log(everything);
+        // setUserInfo(everything);
     }
 
     useEffect(() => {
@@ -72,8 +83,8 @@ const ContactList = (props) => {
             </div>
 
             <div className="listOfContacts">
-                {allContacts.map((contact) =>
-                    <ContactItem key={contact._id} userInfo={contact} setChatPlaceHolder={setChatPlaceHolder} setSelectedChat={setSelectedChat} />
+                {userInfo.map((item) =>
+                    <ContactItem key={item._id} userInfo={item} setChatPlaceHolder={setChatPlaceHolder} setSelectedChat={setSelectedChat} />
                 )}
             </div>
         </div>
