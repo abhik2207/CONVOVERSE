@@ -87,8 +87,16 @@
 }
 
 .rightSection > p {
-    color: #000;
-    font-size: 0.7vmax;
+    font-size: 1vmax;
     font-weight: 500;
     transition: 0.3s;
+}
+
+.sentSign {
+    color: #00000062;
+}
+
+.recievedSign {
+    color: #00b395;
+    font-weight: 200;
 }
