@@ -1,0 +1,145 @@
+.conversationContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    background-color: #f8f9fb;
+    position: relative;
+}
+
+.conversationHeader {
+    background: linear-gradient(to bottom right, #022423, #004136, #00725f, #00977e);
+    height: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 1vmax;
+    color: #fff;
+}
+
+.chatPerson {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 0.8vmax;
+}
+
+.personDP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5vmax;
+    height: 3.5vmax;
+    border: 2px solid #00BFA0;
+    border-radius: 50%;
+}
+
+.personDP > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0.1vmax;
+}
+
+.personName > p {
+    font-size: 1.4vmax;
+    font-weight: 700;
+}
+
+.chatSection {
+    height: 84%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vmax;
+    padding: 1vmax;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.emojiContainer {
+    position: absolute;
+    bottom: 4.12vmax;
+    left: 1vmax;
+}
+
+.chatSection::-webkit-scrollbar {
+    width: 0;
+}
+
+.sendMessageDiv {
+    width: 100%;
+    height: 8%;
+    background: linear-gradient(to top right, #022423, #004136, #00725f, #00977e);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 1vmax;
+}
+
+.emojiLogo {
+    height: 60%;
+    width: 5%;
+    background-color: #ffffffbe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+}
+
+.HiOutlineEmojiHappy {
+    font-size: 1.5vmax;
+}
+
+.messageInput {
+    height: 60%;
+    width: 90%;
+}
+.messageInput > input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1vmax;
+    background-color: #ffffffbe;
+}
+
+.sendLogo {
+    height: 60%;
+    width: 5%;
+    background-color: #ffffffbe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+
+.AiOutlineSend {
+    font-size: 1.5vmax;
+}
+
+.startTalkingDiv {
+    width: 35%;
+    height: 20%;
+    background-color: #000000b6;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2vmax;
+    box-shadow: 0px 0px 30px #000;
+}
