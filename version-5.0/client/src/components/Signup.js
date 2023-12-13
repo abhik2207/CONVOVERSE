@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Signup.css';
-import qrCode from './LoginQRcode.png';
+import qrCode from './QR.png';
 import signupLogo from './SignupLogo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
