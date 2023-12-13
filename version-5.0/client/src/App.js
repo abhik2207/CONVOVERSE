@@ -38,7 +38,6 @@ const App = () => {
       </Routes>
       <ToastContainer />
     </>
-
   )
 }
 
