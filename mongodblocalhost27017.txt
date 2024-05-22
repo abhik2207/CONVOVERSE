@@ -1,0 +1,19 @@
+mongodb://localhost:27017
+mongodb://127.0.0.1:27017/convoverseDB
+
+Abhik Gupta - 7042053577 - abhik1234
+Nishchay Chandok - 9355165735 - nishchay1234
+Kanishka Sharma - 9310084809 - kanishka1234
+Gautam Arora - 9015753095 - gautam123490157
+Yatin Hooda - 8447476577 - yatin1234
+Simran Verma - 9818117317 - simran1234
+John P Varghese - 9911002448 - john1234
+Bhawesh Pande - 9821008597 - bhawesh1234
+Roshan Sandilya - 8595846841 - roshan1234
+Angel Chauhan - 7042075259 - angel1234
+Meenakshi Singh - 9899157645 - meenakshi1234
+Srishti Mishra - 8700750112 - srishti1234
+Harsh Meena - 9958366423 - harsh1234
+Saurav Yadav - 8950548318 - saurav1234
+Aaditya Aggarwal - 8700838697 - aaditya1234
+Shreya Sharan - 7011124458 - shreya1234
